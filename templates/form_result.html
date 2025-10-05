@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı form bilgileri</title>
+    <link rel="stylesheet" href="../../static/css/style.css"> 
+</head>
+<body>
+     <header class="header">
+    <div class="header__text">
+      <form class="form_result"></form>
+      <h1>Evinizin enerji verimliliğini hesaplayın!</h1>
+      <p>Girişimde bulunun ve aşırı enerji tüketimi sorununu çözün!</p>
+    </div>
+  </header>
+    {% block content %}
+    <h2>Formu doldurduğunuz için çok teşekkürler! </h2>
+
+    <p>Adınız : {{name}} </p>
+    <p>E-Postanız : {{email}}</p>
+    <p>Adresiniz: {{adress}}</p>
+    <p>Tarihiniz: {{date}}</p>
+    {%endblock%}
+</body>
+</html>
